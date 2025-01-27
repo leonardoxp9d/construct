@@ -296,6 +296,8 @@ img {
 .home__img-1 {
   width: 250px;
   margin-left: 3.5rem;
+
+  border-radius: 20px; /*-*/
 }
 
 .home__img-2 {
@@ -304,6 +306,8 @@ img {
   position: absolute;
   left: 0;
   bottom: -3.5rem;
+
+  border-radius: 2rem; /*-*/
 }
 
 .home__lines {
@@ -325,6 +329,8 @@ img {
   font-weight: var(--font-semi-bold);
   padding: 1rem 2rem;
   transition: box-shadow .4s;
+
+  border-radius: 10px;
 }
 
 .button:hover {
@@ -396,11 +402,14 @@ img {
   position: absolute;
   top: -5rem;
   left: 6rem;
+
+  border-radius: 2rem;
 }
 
 .about__img-2 {
   width: 250px;
   margin-right: 2.5rem;
+  border-radius: 20px;
 }
 
 /*=============== SERVICES ===============*/
@@ -427,6 +436,8 @@ img {
   border: 2px solid var(--gray-border);
   padding: 2rem 1rem 3.5rem;
   transition: border-color .4s;
+
+  border-radius: 2rem;/*-*/
 }
 
 .services__card:hover {
@@ -510,7 +521,16 @@ img {
   border: 2px solid transparent;
   background-clip: content-box;
   transition: border-color .4s;
+
+  border-radius: 26px 26px 20px 20px;/*-*/
+  
 }
+
+/*-*/
+.projects__img {
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
+}/*-*/
 
 .projects__card:hover {
   border-color: var(--first-color);
@@ -541,6 +561,8 @@ img {
 .contact__img {
   width: 320px;
   justify-self: center;
+
+  border-radius: 2rem;
 }
 
 .contact__data {
@@ -555,6 +577,8 @@ img {
   padding: 1.5rem 2rem;
   text-align: center;
   transition: border-color .4s;
+
+  border-radius: 20px; /*-*/
 }
 
 .contact__card:hover {
@@ -705,13 +729,15 @@ img {
   right: 1rem;
   bottom: -50%;
   background-color: var(--body-color);
-  box-shadow: 0 4px 16px hsla(255, 90%, 8%, .15);
+  box-shadow: 0 4px 20px hsla(255, 90%, 8%, .5);
   color: var(--title-color);
   display: inline-flex;
-  padding: 6px;
-  font-size: 1.25rem;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 2rem;
   z-index: var(--z-tooltip);
   transition: bottom .4s, transform .4s;
+  
 }
 
 .scrollup:hover {
@@ -978,10 +1004,11 @@ img {
   }
 
   .projects__card {
-    border-width: 3px;
+    border-width: 4px;
   }
 
   .projects__data {
+    
     padding: 2rem 1.5rem 4rem;
   }
 
